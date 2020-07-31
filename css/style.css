@@ -224,6 +224,8 @@ ul, li {
 }
 
 .header__descr {
+    display: flex;
+    flex-direction: column;
     margin-top: 13px;
     font-size: 16px;
     font-weight: 400;
@@ -250,33 +252,48 @@ ul, li {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
 .company {
+    position: relative;
     width: 288px;
+    height: 853px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .company-text {
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;  
     font-size: 24px;
-    font-weight: 700;
     line-height: 29px;
+    font-weight: 700;
     color: #303030;
 }
 
-.company-text--right::before {
+.company-text b{
+    height: 29px;
+    width: 159px;
+}
+
+.company-text::before {
+    position: absolute;
+    left: 0;
     content: "";
-    width: 100%;
+    width: 15%;
     height: 1px;
     background: rgba(176, 28, 46, 0.15);
 }
 
-.company-text--left::after {
+.company-text::after {
+    position: absolute;
+    right: 0;
     content: "";
-    width: 100%;
+    width: 15%;
     height: 1px;
     background: rgba(176, 28, 46, 0.15);
 }
@@ -291,9 +308,74 @@ ul, li {
 }
 
 .company-text--left {
-    margin-right: 15px;
+    margin-right: 25px;
 }
 
 .company-text--right {
-    margin-left: 15px;
+    margin-left: 25px;
+}
+
+.company-left {
+    margin-top: 16px;
+    width: 100%;
+}
+
+.company-descr {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.company-right {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-info span{
+    display: block;
+    font-size: 22px;
+    line-height: 27px;
+    font-weight: 600;
+    color: #303030;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+.company-info span b {
+    display: none;
+}
+
+.company-info {
+    width: 229px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.company-info--text {
+    margin-top: 32px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #A1A6B7;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #303030;
+}
+
+.company-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    width: 247px;
+    height: 48px;
+    background: linear-gradient(165.61deg, #C21C1C -2.03%, #BD1313 -2.02%, #970D1D 91.42%);
+    border-radius: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 17px;
 }
