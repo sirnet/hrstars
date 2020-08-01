@@ -257,9 +257,16 @@ ul, li {
 }
 
 .company {
+    width: 100%;
     position: relative;
-    width: 288px;
     height: 853px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    width: 288px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -273,6 +280,7 @@ ul, li {
     line-height: 29px;
     font-weight: 700;
     color: #303030;
+    text-align: center;
 }
 
 .company-text b{
@@ -366,8 +374,8 @@ ul, li {
 
 .company-btn {
     position: absolute;
-    bottom: 30px;
-    right: 0;
+    bottom: 0px;
+    right: 16px;
     width: 247px;
     height: 48px;
     background: linear-gradient(165.61deg, #C21C1C -2.03%, #BD1313 -2.02%, #970D1D 91.42%);
@@ -378,4 +386,59 @@ ul, li {
     color: #ffffff;
     font-weight: 600;
     line-height: 17px;
+}
+
+.advantages {
+    margin-top: 74px;
+}
+
+.advantages-text b{
+    height: 58px;
+    width: 186px;
+}
+
+.advantages-text .company-text--left {
+    margin-right: 24px;
+}
+
+.advantages-text .company-text--right {
+    margin-left: 24px;
+}
+
+.advantages-text::before {
+    width: 13%;
+}
+
+.advantages-text::after {
+    width: 13%;
+}
+
+.advantages-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.advantages-img {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.advantages-tittle {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.advantages-info {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.advantages-item:nth-child(2) .advantages-img {
+    height: 258px;
+    background-size: cover;
 }
