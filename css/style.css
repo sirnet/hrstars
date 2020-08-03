@@ -716,7 +716,7 @@ ul, li {
 }
 
 .recomendation-btn {
-    margin: 10px;
+    margin: 8px;
     position: relative;
     display: flex;
     justify-content: center;
@@ -746,20 +746,122 @@ ul, li {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    margin-left: 21px;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 0;
 }
 
 .recommendation-info {
     color: #303030;
-    margin-left: 21px;
+    margin-left: 19px;
     margin-top: 10px;
     width: 248px;
+    line-height: 22px;
 }
 
 .recommendation-link {
     display: block;
     margin-top: 20px;
     margin-right: 20px;
+    margin-bottom: 19px;
+    text-align: right;
+    color: #B01C2E;
+}
+
+
+.recommendation .owl-nav {
+    display: none;
+}
+
+.recommendation .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 35px;
+}
+
+.recommendation .owl-dot {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.recommendation .owl-dot span{
+    display: block;
+    background: #A1A6B7; 
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.recommendation .owl-dot.active {
+    border: 1px solid #B01C2E;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recommendation .owl-dot.active span{
+    background: #B01C2E;
+}
+
+.blog {
+    margin-top: 40px;
+}
+
+.blog-item {
+    border: 1px solid #DBE1EB;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 29px;
+}
+
+.blog-img {
+    width: 225px;
+    height: 184px;
+    margin-bottom: 14px;
+}
+
+.blog-tittle {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #303030;
+}
+
+.blog-info {
+    line-height: 19px;
+    color: #303030;
+    width: 225px;
+}
+
+.blog-contant {
+    margin-top: 35px;
+}
+
+.blog-contant span {
+    margin-right: 28px;
+}
+
+.blog-link {
+    color: #B01C2E;
+}
+
+.blog-news--link {
+    color: #ffffff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 48px;
+    background: linear-gradient(164.59deg, #C21C1C -2.03%, #BD1313 -2.02%, #970D1D 91.42%);
+    border-radius: 51px;
     text-align: right;
 }
