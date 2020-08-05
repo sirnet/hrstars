@@ -811,6 +811,7 @@ ul, li {
 
 .blog {
     margin-top: 40px;
+    position: relative;
 }
 
 .blog-item {
@@ -863,5 +864,85 @@ ul, li {
     height: 48px;
     background: linear-gradient(164.59deg, #C21C1C -2.03%, #BD1313 -2.02%, #970D1D 91.42%);
     border-radius: 51px;
-    text-align: right;
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+    text-decoration: none;
+}
+
+.contacts {
+    margin-top: 120px;
+    height: 366px;
+}
+
+.contacts-text {
+    margin-bottom: 17px;
+}
+
+.contacts-container {
+    position: relative;
+}
+
+.contacts-img {
+    position: absolute;
+    z-index: 94;
+}
+
+.contacts-info, .contacts-phone--block, .contacts-btn {
+    z-index: 95;
+}
+
+.contacts-info {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #A1A6B7;
+    margin-bottom: 42px;
+}
+
+.contacts-phone {
+    color: #303030;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.contacts-phone--block {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+.contacts-phone--block span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.06);
+    border-radius: 50%;
+    margin-right: 14px;
+}
+
+.contacts-btn {
+    color: #ffffff;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 247px;
+    height: 48px;
+    background: linear-gradient(164.59deg, #C21C1C -2.03%, #BD1313 -2.02%, #970D1D 91.42%);
+    border-radius: 51px;
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+    text-decoration: none;
+}
+
+.page-footer {
+    background: #003882;
+
 }
